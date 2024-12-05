@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DOAÇÃO SOLIDÁRIA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">1</a></li>
+                <li><a href="server.php">2</a></li>
+                <li><a href="desenvolvedores.html">3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="server.php" method="post">
+            
+            <div class="grupo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="grupo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="grupo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="grupo_estado">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="0">Selecione seu estado</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option> 
+                </select>
+            </div>
+            <div class="grupo">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+            <div class="grupo">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </div>
+            <div class="grupo_genero">
+                <label for="genero">Gênero:</label>
+                <label><input type="radio" id="masculino" name="genero" value="Masculino" class = "gen"> Masculino</label>
+                <label><input type="radio" id="feminino" name="genero" value="Feminino" class = "gen"> Feminino</label>
+                <label><input type="radio" id="outro" name="genero" value="Outro" class = "gen"> Outro</label>
+            </div>
+            <div class="grupo">
+                <label for="qtd_instituicoes">Quantas instituições você pretende ajudar:</label>
+                <input type="number" id="qtd_instituicoes" name="qtd_instituicoes">
+            </div>
+            <div class="grupo">
+                <label for="foto">Foto de Perfil:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+            <div class="grupo_preferencias">
+                <label for="preferencias">Quem deseja ajudar:</label><br>
+                <label><input type="checkbox" name="preferencias[]" value="C" class="pref">Crianças</label>
+                <label><input type="checkbox" name="preferencias[]" value="I" class="pref">Idosos</label>
+                <label><input type="checkbox" name="preferencias[]" value="P" class="pref">Pessoas em situação de rua</label>
+                <label><input type="checkbox" name="preferencias[]" value="A" class="pref">Animais</label>
+            </div>
+            <div class="">
+                <label for="senha">Crie uma senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>IFRN Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Componentes do grupo: Beatriz Lauanny Soares dos Santos e Jéssica Laizi da Silva</p>
+        <p>Referências: [https://www.devmedia.com.br/html-input-construindo-formularios-com-html/43493]</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+    
